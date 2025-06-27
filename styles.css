@@ -1,0 +1,168 @@
+
+/* styles.css - Festejando a Conexão Campo e Cidade - Tema Escuro */
+
+/* Geral */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a2e; /* Fundo escuro principal */
+    color: #e0e0e0; /* Cor do texto claro */
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #16213e; /* Azul escuro para o cabeçalho */
+    color: #e0e0e0;
+    padding: 1.5em 0;
+    text-align: center;
+    border-bottom: 2px solid #0f3460; /* Toque de azul mais escuro */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+    color: #007bff; /* Azul vibrante para o título */
+    text-shadow: 1px 1px 2px rgba(0, 123, 255, 0.4);
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 5px;
+    color: #a0a0a0;
+}
+
+/* Conteúdo Principal */
+main {
+    padding: 2em;
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #1b203a; /* Fundo mais claro que o body, mas ainda escuro */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.2); /* Sutil sombra azul */
+}
+
+main h2 {
+    font-size: 2em;
+    color: #007bff; /* Azul vibrante para os subtítulos */
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+main p {
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+/* Seções de Cards */
+.card-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os cards */
+    margin-top: 2em;
+}
+
+.card-section h2 {
+    width: 100%; /* Garante que o título ocupe a largura total */
+    margin-bottom: 1em;
+}
+
+.card {
+    background-color: #0f3460; /* Fundo do card com azul mais escuro */
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1 1 calc(33% - 40px); /* Flexbox para 3 cards por linha, ajustando o espaço */
+    min-width: 280px; /* Largura mínima para os cards */
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Sombra para destacar os cards */
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+}
+
+.card h3 {
+    color: #66b3ff; /* Azul mais claro para os títulos dos cards */
+    margin-top: 0;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.card p {
+    font-size: 0.95em;
+    color: #c0c0c0;
+    text-align: justify;
+}
+
+
+/* Rodapé */
+footer {
+    background-color: #0f3460; /* Azul escuro para o rodapé */
+    color: #e0e0e0;
+    text-align: center;
+    padding: 1.5em 0;
+    margin-top: 40px;
+    border-top: 2px solid #16213e; /* Toque de azul mais claro */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #a0a0a0;
+}
+
+/* Estilos de link (exemplo, caso adicione links depois) */
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #66b3ff;
+}
+
+/* Responsividade básica (para telas menores) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    main {
+        padding: 1.5em;
+        margin: 20px auto;
+    }
+
+    main h2 {
+        font-size: 1.8em;
+    }
+
+    .card {
+        flex: 1 1 calc(50% - 20px); /* 2 cards por linha em telas médias */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    main {
+        padding: 1em;
+    }
+
+    main h2 {
+        font-size: 1.5em;
+    }
+
+    .card {
+        flex: 1 1 100%; /* 1 card por linha em telas pequenas */
+    }
+}
+
